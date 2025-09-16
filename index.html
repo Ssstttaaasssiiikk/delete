@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Удаление профиля — Инструкция</title>
+  <style>
+    :root{
+      --bg:#f6f7fb;
+      --card:#ffffff;
+      --accent:#2b6cb0;
+      --text:#1a202c;
+      --muted:#586069;
+      --radius:12px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      padding:32px;
+      background:linear-gradient(180deg,var(--bg),#eef2f6);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:100vh;
+    }
+    .container{
+      max-width:780px;
+      width:100%;
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:0 6px 30px rgba(15,23,42,0.08);
+      padding:28px;
+    }
+    header{display:flex;align-items:center;gap:16px}
+    .logo{
+      width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#6fb1ff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px
+    }
+    h1{margin:0;font-size:20px}
+    h2{margin-top:18px;font-size:16px;color:var(--accent)}
+    p{line-height:1.6;color:var(--muted);margin:14px 0;font-size:15px}
+    .note{background:#f8fafc;border-left:4px solid #e2e8f0;padding:12px;border-radius:8px;color:var(--text)}
+    .actions{display:flex;gap:12px;margin-top:20px}
+    .btn{padding:10px 14px;border-radius:8px;border:0;cursor:pointer;font-weight:600}
+    .btn-primary{background:var(--accent);color:white}
+    .btn-ghost{background:transparent;border:1px solid #e6eefb;color:var(--accent)}
+    footer{margin-top:18px;color:#9aa4b2;font-size:13px}
+    @media (max-width:520px){body{padding:18px}.container{padding:18px}}
+  </style>
+</head>
+<body>
+  <main class="container" role="main">
+    <header>
+      <div class="logo" aria-hidden>У</div>
+      <div>
+        <h1>Удаление профиля</h1>
+        <div style="font-size:13px;color:var(--muted);margin-top:6px">Краткая инструкция по удалению аккаунта</div>
+      </div>
+    </header>
+
+    <h2>Инструкция по удалению аккаунта</h2>
+
+    <p>Для удаления аккаунта мобильного приложения Вам необходимо перейти в раздел "Профиль", "Помощь" и нажать на кнопку "Удалить профиль".</p>
+
+    <div class="note" role="note">
+      После этого действия все данные, связанные с аккаунтом, будут удалены из базы данных.
+    </div>
+
+    <div class="actions" aria-hidden>
+      <button class="btn btn-primary">Открыть профиль</button>
+      <button class="btn btn-ghost">Отмена</button>
+    </div>
+
+    <footer>
+      Если у вас остались вопросы — обратитесь в службу поддержки приложения.
+    </footer>
+  </main>
+</body>
+</html>
